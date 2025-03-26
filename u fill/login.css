@@ -1,0 +1,180 @@
+body{
+    background-color: #1856d2;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+.log{
+    background-color: #f6f6f6;
+    
+    padding: 70px;
+    width: 330px;
+    height: 522px;
+}
+.full{
+   
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+        margin: 22px;
+        margin-left: 121px;
+       
+        padding: 2rem; 
+   
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    color: #3428da;
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    color: rgb(11, 11, 11);
+    text-shadow: 2px 2px 4px #eadddd;
+}
+input{
+    width: 270px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+.Forgot{
+    text-decoration: none;
+    margin: 35px;
+    color: red;
+    font-style: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+.button{
+    background-color:  #3428da;
+    width:320px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 50px;
+    color: rgb(252, 252, 252);
+    padding: 5px;
+    font-size: 20px;
+    margin: 18px;
+    border: none;
+}
+.button:hover{
+     background-color: #3428da;
+}
+
+.material-icons{
+    color: #3428da;
+}
+.align{
+   display: flex;
+   align-items: center;
+}
+.fun{
+    margin: 32px;
+}
+
+
+@media screen and (max-width:480px){
+body{
+    background-image: linear-gradient(to right, rgba(255, 210, 245, 0.911), #cf1553);
+    background-size: 500px 200px;
+}
+.log{
+    
+    background-color: transparent;
+    padding: 52px;
+    width: 1403px;
+    height: 731px;
+    padding-right: 63px;
+    background-attachment: scroll;
+    
+}
+
+
+.full{
+   
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+        margin: 22px;
+        margin-left: 121px;
+       
+        padding: 0px;
+        background-attachment: scroll;
+
+   
+}
+a{
+    text-decoration: none;
+    color:  #cf1553;
+}
+a:hover{
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+}
+h1{
+    font-size: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    color: rgb(11, 11, 11);
+    text-shadow: 2px 2px 4px #eadddd;
+}
+input{
+    width: 270px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+.Forgot{
+    color:  #3428da;
+    text-decoration: none;
+    margin: 35px;
+    font-style: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+.button{
+    background-color: #3428da;
+    width:320px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 50px;
+    color: rgb(252, 252, 252);
+    padding: 5px;
+    font-size: 20px;
+    margin: 18px;
+    border: none;
+}
+.button:hover{
+     background-color: #3428da;
+}
+
+.material-icons{
+    color: #3428da ;
+}
+.align{
+   display: flex;
+   align-items: center;
+}
+.fun{
+    margin: 32px;
+    color: red;
+}
+img{
+    display: none;
+}
+
+
+}
+
+
+
+/*@media (min-width:480px) */   /* smartphones, Android phones, landscape iPhone */ 
+/*@media (min-width:600px) */   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+/*@media (min-width:801px) */   /* tablet, landscape iPad, lo-res laptops ands desktops */
+/*@media (min-width:1025px)*/  /* big landscape tablets, laptops, and desktops */
+/*@media (min-width:320px) */   /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
