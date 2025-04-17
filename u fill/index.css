@@ -61,13 +61,17 @@ body {
     background-color:#1776d6 ;
 }
 .container {
-    width: 1505px;
+    width: 1500px;
     margin: auto;
+    align-items: flex-start;
+    
     padding: 15px;
+    
 }
 .header {
     background: #ffff;
     box-shadow: 0 1px 1px rgba(117, 39, 39, 0.5) ;
+    width: 1500px;
     
 }
 .even{
@@ -79,13 +83,15 @@ body {
     font-size: 25px;
     color: #1776d6;
     padding-bottom: 1px;
-    font-style: initial;
-    margin-top: -5px;
+    font-weight: bolder;
+    margin-top: 10px;
 }
 
-.header img{
-    height: 500px;
-    width: 500px;
+.evenpic{
+  height: 150px;
+    width: 150px;
+    margin-top: -20px;
+    
     padding-left: 0px;
     padding-top: 0px;
 
@@ -98,6 +104,8 @@ body {
 .thirukkural-sol {
     font-size: 20px;
     margin-top: -15px;
+    margin-top: -8px; 
+    margin-right: 60px;
 }
 .bio {
     margin: 30px 10px;
@@ -640,4 +648,4 @@ h1 {
   padding: 7px;
  }
 
-
+ 
