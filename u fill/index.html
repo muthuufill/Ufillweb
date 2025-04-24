@@ -6,7 +6,9 @@
     <title>U Fill Academy</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="website icon" type="png" href="logo-ufill.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
@@ -14,32 +16,65 @@
     
 </head>
 <body>
-    <div class="navheader">
-        <div class="logo">
-            <img src="logo-ufill.png" alt="Logo"> 
-        </div>
-        <nav>
-          <div class="menu-toggle" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
+        <nav class="navbar bg-body-tertiary fixed-top">
+          <div class="container-fluid">
+            <div class="logo">
+              <img src="logo-ufill.png" alt="Logo"> 
           </div>
-
-            <ul class="nav" id="myTopnav">
-                <a href="#HOME">HOME</a>
-                <a href="#VISION&MISSION">VISION&MISSION</a>
-                <a href="#COURSES">COURSES</a>
-                <a href="#">GALLERY</a>
-                <a href="#CONTACT">CONTACT US</a>
-                <a href="login.html">LOGIN</a>
-                <!--<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>-->
-                </a>
-              </ul>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Ufillacademy</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html">About us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html">Vision & Mission</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html">Our Team</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="course.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Courses
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="course.html">Robotics & Embedded Systems</a></li>
+                      <li><a class="dropdown-item" href="course.html">Scratch Programming</a></li>
+                      <li><a class="dropdown-item" href="course.html">Arduino & ESP8266</a></li>
+                      <li><a class="dropdown-item" href="course.html">Python Basics</a></li>
+                      <li><a class="dropdown-item" href="course.html">Flutter App Development</a></li>
+                      <li><a class="dropdown-item" href="course.html">Abacus & Speed Maths</a></li>
+                      <li><a class="dropdown-item" href="course.html">Personality Development</a></li>
+                      <li><a class="dropdown-item" href="course.html">Spoken English</a></li>
+                      <li><a class="dropdown-item" href="course.html">Chess</a></li>
+                      <li><a class="dropdown-item" href="course.html">AI & IOT</a></li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex mt-3" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </div>
         </nav>
-    </div>
-    <div class="container">
-        <div class="header">
+    
+    <div class="container-top">
+        <div class="header-top">
             <h1>IT’S GREAT TO SEE SO MANY FRIENDLY FACES HERE TODAY—WELCOME!</h1><br>
             <div class="even">
                 <p class="thirukkural-sol"> <span class="thirukkural">திருக்குறள் - 1.2.391 </span><br>"கற்றதனால் ஆய பயனென்கொல் வாலிபன்<br>நற்றாள் தொழாஅர் எனின்"</p>
@@ -54,7 +89,7 @@
         </div>
         
         <div class="about-section" id="HOME">
-            <h2>"Welcome to U Fill Academy!"</h2>
+            <h2 style="justify-items: center;">"Welcome to U Fill Academy!"</h2>
             <div class="about-section-pic">
                 <div class="evenpic2">
                     <img src="bot1.png" style=" height: 200px; width: 200px; margin-bottom: 20px;">
@@ -85,193 +120,6 @@
             </div>
         </div>
 -->
-
-        <div class="about-section" id="HOME">
-          <section class="team-section">
-            <div class="team-left">
-              
-              <div class="con-top-bar">
-                
-                <div class="con-bar-line"></div>
-                <h1>Meet Our<br>Team</h1>
-                <div class="con-dots">
-                  <span></span><span></span><span></span>
-                </div>
-              </div>
-            </div>
-            <div class="team-right">
-              <ul class="team-list">
-                <li>
-                  <span class="arrow">▶</span>
-                  <div>
-                    <strong>Mr. Prem Chandar</strong><br>
-                    <span class="director1">Director</span>
-                  </div>
-                </li>
-                <!-- <li>
-                  <span class="arrow">▶</span>
-                  <div>
-                    <strong class="Madhu">Ms.Madhu Mitha</strong><br>
-                    <span >Board of Director & Legal Advisor</span>
-                  </div>
-                </li> -->
-                
-                <li>
-                  <span class="arrow">▶</span>
-                  <div>
-                    <strong>Ms. Dhivya Dharshini</strong><br>
-                    <span class="director2">Director</span>
-                  </div>
-                </li>
-                <li>
-                  <span class="arrow">▶</span>
-                  <div>
-                    <strong>Mr. Vignesh</strong><br>
-                    <span>Marketing Manager</span>
-                  </div>
-                </li>
-                <!-- <li>
-                  <span class="arrow">▶</span>
-                  <div>
-                    <strong>Ms. Jenifer</strong><br>
-                    <span>Secretary</span>
-                  </div>
-                </li>
-                <li>
-                  <span class="arrow">▶</span>
-                  <div>
-                    <strong>Ms. Dhivya Bharathi</strong><br>
-                    <span>HR Management & Tutor</span>
-                  </div>
-                </li>
-                <li>
-                  <span class="arrow">▶</span>
-                  <div>
-                    <strong>Ms. Gowshika</strong><br>
-                    <span>Legal Advisor</span>
-                  </div>
-                </li> -->
-              </ul>
-              <img src="meetourteamimg.png" alt="Robot" class="robot-img">
-            </div>
-          </section>
-        </div>
-
-        <div class="about-section" id="HOME">
-        
-            <div class="about-company">
-                <h1 id="about-company-1">About the Company</h1>
-                <div class="about-company-2">
-                    <p> 
-                        <li>U Fill Academy is a Teaching Platform which is made for developing a Knowledge to kids and make them to pride.</li> 
-                        <li>U Fill Academy is a one od the best institute for developing a Knowledge with new technologies and new courses with the help of Well learned Faculties</li>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="about-section" id="VISION&MISSION">
-          <div>
-            <div class="section mission-vision">
-              <h2>Mission</h2>
-              <p>"Breaking barriers to education, promoting equity, and inspiring a love of learning."</p>
-        
-              <h2>Vision</h2>
-              <p>"Envision a world where education is limitless, inclusive, and transformative. A world where every individual has access to high-quality learning experiences, empowering them to reach their full potential and shape a brighter future."</p>
-            </div>
-        
-            <div class="section goals">
-              <div class="goal">
-                <div class="icon"><img src="https://img.icons8.com/ios-filled/50/ffffff/todo-list.png" alt="Goal 1"></div>
-                <div class="text">
-                  
-                  <p>Engage All the Students to Learn New Ideas</p>
-                </div>
-              </div>
-        
-              <div class="goal">
-                <div class="icon"><img src="https://img.icons8.com/ios-filled/50/ffffff/marker.png" alt="Goal 2"></div>
-                <div class="text">
-                  
-                  <p>Make them to Develop own Project and Make them to Solve Critical Problems</p>
-                </div>
-              </div>
-        
-              <div class="goal">
-                <div class="icon"><img src="https://img.icons8.com/ios-filled/50/ffffff/idea.png" alt="Goal 3"></div>
-                <div class="text">
-                 
-                  <p>Guide them to succeed their Life with the Right Path</p>
-                </div>
-              </div>
-            </div>
-          </div>
-    </div>
-
-    <div class="about-section" id="VISION&MISSION">
-        <div class="milestone-section">
-            <h2><span class="our">Our</span> <span class="milestones">Milestones</span></h2>
-            <p class="tagline">Dreams Comes True 😉</p>
-        
-            <div class="milestone-timeline">
-              <div class="milestone">
-                <div class="year">2025</div>
-                <p>Creating a Unbreakable Bond with all Schools, Students and Parents.</p>
-              </div>
-        
-              <div class="milestone">
-                <div class="year">2026</div>
-                <p>Grow & Expand our Academic Courses to develop Students Curriculum.</p>
-              </div>
-        
-              <div class="milestone">
-                <div class="year">2027</div>
-                <p>Establishing Branches & Franchisee All over India</p>
-              </div>
-        
-              <div class="milestone">
-                <div class="year">2028</div>
-                <p>Build A New Educational Systematic School for All People</p>
-              </div>
-            </div>
-          </div>
-        
-    </div>
-
-    <div class="about-section" id="COURSES">
-      <div class="course-flex">
-        <div class="left-section">
-            <h1><span class="heading-white">Courses</span><span class="heading-white">We have</span></h1>
-            <ul class="course-list">
-              <li class="course-item">AI & IOT</li>
-              <li class="course-item">Abacus</li>
-              <li class="course-item">Chess</li>
-              <li class="course-item">Vedic Maths</li>
-              <li class="course-item">Scratch</li>
-              <li class="course-item">Personality Development</li>
-              <li class="course-item">Spoken English</li>
-              <li class="course-item">Ms-Office</li>
-              <li class="course-item">Teaching Internship</li>
-              <li class="course-item">Tuition 6th to 10th</li>
-            </ul>
-          </div>
-      
-          <div class="right-section">
-            <div class="email-box">
-              <span></span>
-              <span class="email-text">Ufillacademy@gmail.com</span>
-            </div>
-            <div class="illustration">
-              <!-- Placeholder for image or character illustration -->
-              <div class="character">
-                <img src="course img.png" class="character">
-              </div>
-            </div>
-          </div>
-        </div>
-
-    </div>
-
         
         
         <div class="about-section" id="CONTACT">
@@ -299,17 +147,74 @@
             </div>
           </div>
         </div>
-<footer>
-  <div class="footer">
-    <p>@ 2025</p>
-  </div>
-</footer>    
 
-<script>
-  function toggleMenu() {
-    const navLinks = document.getElementById("nav");
-    navLinks.classList.toggle("show");
-  }
+        
+
+
+
+
+        <footer class="footer">
+          <div class="footer-content">
+            <div class="footer-column">
+              <h3>Ufillacademy</h3>
+              <p>Salem,India</p>
+              
+              <p>Phone: +91 8939976607</p>
+              <p>ufillacademy@gmail.com</p>
+              <div class="social-buttons">
+                <button><i class="fab fa-facebook-f"></i></button>
+                <button><i class="fab fa-x-twitter"></i></button>
+                <button><i class="fab fa-instagram"></i></button>
+                <button><i class="fab fa-youtube"></i></button>
+                <button><i class="fab fa-linkedin-in"></i></button>
+                <button><i class="fab fa-whatsapp"></i></button>
+              </div>
+            </div>
+        
+            <div class="footer-column">
+              <a href="#">Camps</a>
+              <a href="#">Courses</a>
+              <a href="#">Competition Teams</a>
+            </div>
+        
+            <div class="footer-column">
+              <a href="aboutus.html">About Us</a>
+              <a href="aboutus.html">Team</a>
+              <a href="aboutus.html">Mission & Vision</a>
+              <a href="course.html">Course</a>
+              <a href="index.html">Contact Us</a>
+            </div>
+        
+            <div class="footer-column subscribe">
+              <h3>Subscribe to ufillacademy</h3>
+              <form action="mailto:info@robospark.com" method="post" enctype="text/plain" class="subscribe-form">
+                <input type="email" name="email" placeholder="E-mail" required>
+                <button type="submit"><i class="fas fa-arrow-right"></i></button>
+              </form>
+            </div>
+          </div>
+        
+          <div class="footer-bottom">
+            <p>Copyright © 2025 U Fill Academy | All Rights Reserved</p>
+            <div class="payment-icons">
+              <img src="https://img.icons8.com/color/32/amex.png" alt="Amex" />
+              <img src="https://img.icons8.com/color/32/apple-pay.png" alt="Apple Pay" />
+              <img src="https://img.icons8.com/color/32/google-pay.png" alt="Google Pay" />
+              <img src="https://img.icons8.com/color/32/mastercard.png" alt="Mastercard" />
+              <img src="https://img.icons8.com/color/32/paypal.png" alt="Paypal" />
+              <img src="https://img.icons8.com/color/32/visa.png" alt="Visa" />
+            </div>
+            <div class="footer-actions">
+              <button class="whatsapp-btn"><i class="fab fa-whatsapp"></i></button>
+              <button class="call-btn">Schedule a Call</button>
+            </div>
+          </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+
+
 </script>
 
 </body>

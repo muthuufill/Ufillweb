@@ -2,7 +2,6 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    max-width: 85%;
     background: white;
     text-align: center;
 }
@@ -22,28 +21,40 @@ body {
     box-shadow: 0 1px 1px rgba(164, 30, 30, 0.5) ;
 }
 */
-.navheader {
+/* .navheader
+ {
     overflow: hidden;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 10px;
     background: white;
+    
     border-radius: 0px;
     backdrop-filter: blur(10px);
     box-shadow: 0 1px 1px rgba(117, 39, 39, 0.5) ;
     height: 100px;
     width: 1500px;
+    flex-wrap: wrap;
     
     
+} 
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
 }
 
-.logo img {
-    height: 100px; 
-    width: 200px;
-    margin: 0px;
-    padding: 20px;
+.menu-toggle span {
+  height: fit-content;
+  width: 25px;
+  margin-top: 5px;
+  background-color: #1776d6;
+  background-color: rgb(201, 38, 38);
+  margin: 4px 0;
 }
+
+
 .nav a {
     float: left;
     text-align: center;
@@ -60,18 +71,24 @@ body {
     font-size: 20px;
     background-color:#1776d6 ;
 }
-.container {
-    width: 1500px;
-    margin: auto;
-    align-items: flex-start;
-    
-    padding: 15px;
+    */
+.logo img {
+  height: 100px; 
+  width: 150px;
+  margin: 0px;
+  padding: 8px;
+}
+.container-top {
+    margin-top: 150px;
+    margin-left: auto;
+  
     
 }
-.header {
+.header-top {
+
     background: #ffff;
     box-shadow: 0 1px 1px rgba(117, 39, 39, 0.5) ;
-    width: 1500px;
+    width: 1520px;
     
 }
 .even{
@@ -79,12 +96,13 @@ body {
     justify-content: center;
     display: flex;
 }
-.header h1 {
+.header-top h1 {
     font-size: 25px;
     color: #1776d6;
-    padding-bottom: 1px;
+    padding-bottom: 17px;
     font-weight: bolder;
     margin-top: 10px;
+    margin-left: 250px;
 }
 
 .evenpic{
@@ -100,6 +118,7 @@ body {
     font-size: 25px;
     font-weight: bold;
     margin-top: -20px;
+    margin-left: 55px;
 }
 .thirukkural-sol {
     font-size: 20px;
@@ -109,7 +128,8 @@ body {
 }
 .bio {
     margin: 30px 10px;
-    
+    margin-left: 600px; 
+    margin-right: 200px;
     transform: scale(1.37)
 }
 .about-section {
@@ -117,10 +137,11 @@ body {
     width: 1450px;
     color: white;
     padding: 20px;
-    margin: 0.2px auto;
+    margin: 0.2px 24px;
     border-radius: 2px;
     box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.1);
-    
+    margin-top: 1.5px;
+    margin-left: px;
     
 }
 /* 
@@ -216,6 +237,8 @@ body {
   flex-wrap: wrap;
   min-height: 50vh;
   background-color: #f2f2f2;
+  margin-top: 115px;
+  margin-left: px;
 }
 .con-bar-line {
   display: flex;
@@ -455,7 +478,7 @@ body {
     .left-section {
       background-color: #0a2a5b;
       color: white;
-      
+      margin-top: 120px;
       padding: 40px 30px;
       flex: 1;
     }
@@ -501,6 +524,7 @@ body {
       display: flex;
       flex-direction: column;
       max-width: 400px;
+      margin-top: 120px;
     }
     
     .email-box {
@@ -645,63 +669,140 @@ h1 {
   background-color: #561eb1;
   margin-top: 8px;
 }
- .footer{
-  background-color: #344;
+ 
+.footer {
+  background-color: #111;
   color: #fff;
+  padding: 40px 20px;
+  margin: 0.2px 24px;
+  width: 1450px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-column {
+  flex: 1 1 220px;
+  max-width: 300px;
+}
+
+.footer-column h3 {
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.footer-column a{
+  display: flex;
+  margin: 5px 0;
+  font-size: 15px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.social-buttons button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 18px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.subscribe-form {
+  display: flex;
+  margin-top: 10px;
+}
+
+.subscribe-form input {
+  padding: 10px;
+  border: 1px solid #444;
+  background: #222;
+  color: #fff;
+  flex: 1;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+}
+
+.subscribe-form button {
+  background: #333;
+  border: none;
+  padding: 10px 15px;
+  color: white;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.payment-icons img {
+  margin: 0 5px;
+}
+
+.footer-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.whatsapp-btn {
+  background: #25D366;
+  color: white;
+  border: 2px solid white;
+  border-radius: 50%;
   font-size: 20px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.call-btn {
+  background: #007bff;
+  color: white;
   font-weight: bold;
-  padding: 7px;
- }
+  border: none;
+  border-radius: 24px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+
+
 
 @media (max-width:480px)  /* smartphones, Android phones, landscape iPhone */ {
   body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    max-width: 50%;
+    width: 400px;
     background: white;
     text-align: center;
 }
 
-.navheader ul {
-  display: none;
-  width: 400px;
-  flex-direction: column;
-  margin-top: 10px;
-  color: black;
-}
 
-.navheader ul.show {
-  display: flex;
-  color: black;
-}
-
-.menu-toggle {
-  display: flex;
-  color: black;
-}
-
-.navheader {
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 0px;
-    background: white;
-    border-radius: 0px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 1px 1px rgba(117, 39, 39, 0.5) ;
-    height: 100px;
-    width: 400px;
-    
-    
-}
 
 .logo img {
-    height: 100px; 
-    width: 200px;
-    margin: 0px;
-    padding: 20px;
+  height: 99px;
+  width: 169px;
+  margin: 0px;
+  padding: 10px;
+  position: fixed;
 }
 .nav a {
     float: left;
@@ -724,7 +825,7 @@ h1 {
     
     margin: auto;
     align-items: flex-start;
-    
+    width: 400px;
     padding: 15px;
     
 }
@@ -778,8 +879,8 @@ h1 {
     width: 400px;
     color: white;
     padding: 0px;
-    margin-right: 50px;
-    margin: 13.2px 3px;
+    margin-right: 0px;
+    margin: 0px 0px;
     border-radius: 2px;
     box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.1);
     
@@ -908,6 +1009,7 @@ h1 {
 .about-company-2{
     font-size: 22px;
     margin-left: 5px;
+    
     font-weight: 1000000;
 }
 #about-company-1{
@@ -1242,32 +1344,5 @@ h1 {
   background-color: #561eb1;
   margin-top: 8px;
 }
- .footer{
-  background-color: #344;
-  color: #fff;
-  font-size: 20px;
-  font-weight: bold;
-  padding: 4px;
-  width: 400px;
- }
 
 }
-
-@media (max-width: 768px) {
-  .navheader ul {
-    display: none;
-    width: 100%;
-    flex-direction: column;
-    margin-top: 10px;
-  }
-
-  .navheader ul.show {
-    display: flex;
-  }
-
-  .menu-toggle {
-    display: flex;
-  }
-
-}
-
