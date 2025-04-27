@@ -1411,7 +1411,6 @@ h1 {
   background-color: #561eb1;
   margin-top: 8px;
 }
-
 .footer {
   background-color: #111;
   color: #fff;
@@ -1446,7 +1445,7 @@ h1 {
   color: #fff;
 }
 
-.social-buttons a {
+.social-buttons a{
   background: transparent;
   border: none;
   color: white;
@@ -1491,9 +1490,15 @@ h1 {
 }
 
 .payment-icons img {
-  margin: 5px 5px;
-  height: 30px;
-  width: 30px;
+  margin: 0px 0px;
+  padding: 8px;
+  height: 40px;
+  width: 40px;
+}
+.payment-icons a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
 }
 
 .footer-actions {
@@ -1526,6 +1531,8 @@ h1 {
   font-size: 14px;
   cursor: pointer;
 }
+
+
 
 
 }
