@@ -133,16 +133,25 @@ body {
     transform: scale(1.37)
 }
 .about-section {
-    background: rgb(40, 78, 230);
+    background: #ffffff;
     width: 1450px;
-    color: white;
+    color: rgb(40, 78, 230);
     padding: 20px;
     margin: 0.2px 24px;
     border-radius: 2px;
     box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.1);
     margin-top: 1.5px;
-    margin-left: px;
     
+    
+    
+}
+.reveal {
+  opacity: 0;
+  transform: translateX(-100px);
+}
+.reveal-1 {
+  opacity: 0;
+  transform: translateY(50px);
 }
 /* 
 .about-section h2{
@@ -170,14 +179,14 @@ body {
 }
 
 .about-section h2 {
-    color: white;
+    color: rgb(40, 78, 230);
     font-size: 35px;
 }
 .about-section p {
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 500;
-    color: white;
+    color: rgb(40, 78, 230);
     line-height: 1.6;
 }
 /*
@@ -344,7 +353,7 @@ body {
 }
 #about-company-1{
     border-radius: 2%;
-    color: rgb(255, 255, 255);
+    color: rgb(40, 78, 230);
     padding: 13px;
     font-weight: bolder;
 }
@@ -354,7 +363,7 @@ body {
 }
 
 .mission-vision h2 {
-  color: #f9f9f9;
+  color: rgb(40, 78, 230);
   font-weight: bolder;
   margin-bottom: 10px;
   
@@ -392,7 +401,7 @@ body {
 .text h3 {
   margin: 0;
   font-size: 25px;
-  color: #0a2a5b;
+  color: rgb(40, 78, 230);
 }
 
 .text p {
@@ -414,11 +423,11 @@ body {
   }
   
   .our {
-    color: #ffffff;
+    color: rgb(40, 78, 230);
   }
   
   .milestones {
-    color: #ffffff;
+    color: rgb(40, 78, 230);;
   }
 
   
@@ -477,7 +486,7 @@ body {
     
     .left-section {
       background-color: #0a2a5b;
-      color: white;
+      color: rgb(40, 78, 230);
       margin-top: 120px;
       padding: 40px 30px;
       flex: 1;
@@ -485,6 +494,7 @@ body {
     
     .heading-white {
       font-size: 40px;
+      color: #fff;
       font-weight: bold;
       margin-left: 10px;
     }
@@ -582,6 +592,15 @@ body {
     position: relative;
     clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0 50%);
     transition: transform 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateY(-50px);
+}
+.course-list li p{
+  display: none;
+}
+.course-item:hover p{
+  display: block;
+  color: #fff;
 }
 .course-item:hover {
     transform: scale(1.05);
@@ -732,13 +751,14 @@ h1 {
   color: #fff;
 }
 
-.social-buttons button {
+.social-buttons a{
   background: transparent;
   border: none;
   color: white;
   font-size: 18px;
   margin-right: 10px;
   cursor: pointer;
+  display: unset;
 }
 
 .subscribe-form {
@@ -777,6 +797,13 @@ h1 {
 
 .payment-icons img {
   margin: 0 5px;
+  height: 50px;
+  width: 50px;
+}
+.payment-icons a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
 }
 
 .footer-actions {
@@ -816,8 +843,8 @@ h1 {
 @media (max-width:480px)  /* smartphones, Android phones, landscape iPhone */ {
   body {
     font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
+    margin-left: 10px;
+    padding: 8px;
     width: 400px;
     background: white;
     text-align: center;
@@ -888,16 +915,25 @@ h1 {
     transform: scale(1.37)
 }
 .about-section {
-    background: rgb(40, 78, 230);
+    background: #fff;
     width: 400px;
-    color: white;
+    color: rgb(40, 78, 230);
     padding: 0px;
     margin-right: 0px;
     margin: 0px 0px;
     border-radius: 2px;
+    
     box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.1);
     
     
+}
+.reveal {
+  opacity: 0;
+  transform: translateX(-100px);
+}
+.reveal-1 {
+  opacity: 0;
+  transform: translateY(50px);
 }
 .evenpic2 img{
   height: 110px;
@@ -908,7 +944,7 @@ h1 {
     font-size: 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 500;
-    color: white;
+    color: rgb(40, 78, 230);;
     line-height: 1.6;
 }
 
@@ -1027,7 +1063,7 @@ h1 {
 }
 #about-company-1{
     border-radius: 2%;
-    color: rgb(255, 255, 255);
+    color: rgb(40, 78, 230);;
     padding: 13px;
     font-weight: bolder;
 }
@@ -1037,7 +1073,7 @@ h1 {
 }
 
 .mission-vision h2 {
-  color: #f9f9f9;
+  color: rgb(40, 78, 230);;
   font-weight: bolder;
   margin-bottom: 10px;
   
@@ -1056,9 +1092,9 @@ h1 {
 }
 
 .icon {
-  width: 80px;
-  height: 80px;
-  background-color: #0f0ebfbf;
+  width: 70px;
+  height: 70px;
+  background-color: rgb(0, 0, 0);;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -1067,19 +1103,14 @@ h1 {
 }
 
 .icon img {
-  width: 35px;
-  height: 35px;
+  width: 25px;
+  height: 25px;
   filter: brightness(0) invert(1); /* Makes icon white */
 }
 
-.text h3 {
-  margin: 0;
-  font-size: 25px;
-  color: #0a2a5b;
-}
 
 .text p {
-  margin: 4px 0 -6px;
+  margin: 4px 6px 0px;
   font-size: 20px;
   
 }
@@ -1265,11 +1296,15 @@ h1 {
     position: relative;
     clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0 50%);
     transition: transform 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateY(50px);
 }
 .course-item:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
     background: #0fb96b;
     color: white;
+    clip-path: polygon(-5% 0, 99% 0, 137% 58%, 8% 231%, -26% -45%, 0 -66%);
+    
 }
 .contact-container {
   display: flex;
@@ -1411,13 +1446,14 @@ h1 {
   color: #fff;
 }
 
-.social-buttons button {
+.social-buttons a {
   background: transparent;
   border: none;
   color: white;
   font-size: 18px;
   margin-right: 10px;
   cursor: pointer;
+  display: unset;
 }
 
 .subscribe-form {
@@ -1455,7 +1491,9 @@ h1 {
 }
 
 .payment-icons img {
-  margin: 0 5px;
+  margin: 5px 5px;
+  height: 30px;
+  width: 30px;
 }
 
 .footer-actions {
